@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/home/taras.melko/Downloads/Graph/Graph/app/build/intermediates/pre-dexed/debug/androidplot-core-0.6.1-58e4c46f2739570f574ac2e0148b38ad74630e6e.jar"
+        jar="/home/taras.melko/.gradle/caches/modules-2/files-2.1/com.androidplot/androidplot-core/0.6.1/3db0daea52375b26bfa61c59b8df93950bdefbbc/androidplot-core-0.6.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3db0daea52375b26bfa61c59b8df93950bdefbbc"/>
+
+</pre-dex-items>

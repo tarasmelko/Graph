@@ -91,7 +91,7 @@ public class MyChart {
         plot.setBorderStyle(Plot.BorderStyle.NONE, null, null);
         plot.setPlotMargins(0, 0, 0, 0);
         plot.setPlotPadding(0, 0, 0, 0);
-        plot.setGridPadding(0, 100, 100, 50);
+        plot.setGridPadding(0, 20, 50, 50);
         plot.setBackgroundColor(Color.WHITE);
 
         plot.getGraphWidget().getBackgroundPaint().setColor(Color.WHITE);
@@ -100,7 +100,7 @@ public class MyChart {
         plot.getGraphWidget().getDomainLabelPaint().setColor(Color.BLACK);
         plot.getGraphWidget().getRangeLabelPaint().setColor(Color.TRANSPARENT);
 //        plot.getGraphWidget().setRangeLabelHorizontalOffset(-100);
-        plot.getGraphWidget().getDomainLabelPaint().setTextSize(25);
+        plot.getGraphWidget().getDomainLabelPaint().setTextSize(15);
         plot.getGraphWidget().setDomainLabelVerticalOffset(-40);
 
         //   mySimpleXYPlot.getGraphWidget().getDomainOriginLabelPaint().setColor(Color.BLACK);
@@ -164,7 +164,7 @@ public class MyChart {
         });
         Paint pain = new Paint();
         pain.setTextAlign(Paint.Align.LEFT);
-        pain.setTextSize(30);
+        pain.setTextSize(15);
         pain.setColor(Color.RED);
         lastSeriesFormat.getPointLabelFormatter().setTextPaint(pain);
 
@@ -256,7 +256,7 @@ public class MyChart {
         maxValueMarker = new XValueMarker(endPointOfGraph, "0.0");
         maxValueMarker.getLinePaint().setAlpha(0);
         maxValueMarker.getTextPaint().setColor(Color.BLACK);
-        maxValueMarker.getTextPaint().setTextSize(20);
+        maxValueMarker.getTextPaint().setTextSize(15);
 
         maxValueMarker.setTextPosition(new YPositionMetric(0, YLayoutStyle.ABSOLUTE_FROM_TOP));
         plot.addMarker(maxValueMarker);
@@ -264,7 +264,7 @@ public class MyChart {
         minValueMarker = new XValueMarker(endPointOfGraph, "0.0");
         minValueMarker.getLinePaint().setAlpha(0);
         minValueMarker.getTextPaint().setColor(Color.BLACK);
-        minValueMarker.getTextPaint().setTextSize(20);
+        minValueMarker.getTextPaint().setTextSize(15);
 
         minValueMarker.setTextPosition(new YPositionMetric(0, YLayoutStyle.ABSOLUTE_FROM_BOTTOM));
         plot.addMarker(minValueMarker);
