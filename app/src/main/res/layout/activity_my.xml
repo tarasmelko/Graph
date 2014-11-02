@@ -5,13 +5,47 @@
 
     <com.androidplot.xy.XYPlot
         android:id="@+id/mySimpleXYPlot"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        androidPlot.title="A Simple XY Plot"
         androidPlot.domainLabel="Domain"
         androidPlot.rangeLabel="Range"
-        android:background="#ffffff"
-        android:layout_marginRight="10dp" />
+        androidPlot.title="A Simple XY Plot"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linearLayout"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/up_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_button"
+            android:text="@string/up"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/down_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mySimpleXYPlot"
+            android:layout_margin="3dp"
+            android:layout_toEndOf="@+id/button"
+            android:layout_toRightOf="@+id/button"
+            android:layout_weight="1"
+            android:background="@drawable/ic_button"
+            android:text="@string/down"
+            android:textColor="#ffffff" />
+    </LinearLayout>
 
 
 </RelativeLayout>

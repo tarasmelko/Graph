@@ -1,4 +1,4 @@
-package com.mobilepips.graph;
+package com.mobilepips.graph.listeners;
 
 /**
  * Created by gerardpalma on 30/10/2014.
@@ -6,6 +6,6 @@ package com.mobilepips.graph;
     /*
     This interface will get the value from
      */
-public interface UpdateChart{
+public interface UpdateChartListener {
     float getPrice();
 }
